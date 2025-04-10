@@ -1,0 +1,97 @@
+
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+    margin: 0;
+}
+img {
+    margin-top: 0;
+}
+
+body {
+    /* 3. Add accessible line-height */
+    line-height: 2 !important;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: Vazirmatn, sans-serif;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#show-content h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1rem;
+}
+
+#show-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+#show-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Links */
+#show-content a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+#show-content a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+/* Images */
+#show-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem auto;
+}
+
+#show-content figcaption {
+    text-align: center;
+}
